@@ -8,3 +8,5 @@ The current state is:
 Ultimately, the plate is supposed to spin itself, but under the influence of scroll, slow down or change the direction of rotation.
 
 Regards, Tymek
+
+![animation](https://github.com/Kleszczow/animation/assets/127091176/bfb4fade-c66a-4607-bec6-7d053d56341d)
