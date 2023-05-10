@@ -1,0 +1,36 @@
+@media (width < 600px) {
+  .container {
+    max-width: 300px;
+    max-height: 150px;
+    gap: 5px;
+  }
+  #titlePolicy {
+    font-size: 17px;
+  }
+  #desciptioinPolicy {
+    font-size: 12px;
+  }
+  #closeCookir {
+    margin-top: 4px;
+  }
+}
+@media (width < 500px) {
+  .container {
+    max-width: 250px;
+    max-height: 125px;
+    gap: 6px;
+  }
+  #titlePolicy {
+    font-size: 13px;
+  }
+  #desciptioinPolicy {
+    font-size: 10px;
+  }
+  #closeCookir {
+    margin-top: 0;
+    width: 60%;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-top: 5px;
+  }
+}
