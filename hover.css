@@ -1,0 +1,54 @@
+:root {
+  --timeHover: 400ms;
+  --percent: 60%;
+}
+.hoverEfect {
+  place-content: center start;
+  place-items: start;
+  width: 100%;
+}
+.listHover {
+  border-top: 1px solid white;
+  width: 100vw;
+  display: block;
+  padding: 20px 120px;
+  font-size: 80px;
+  font-weight: 700;
+  color: aliceblue;
+  position: relative;
+  transition: all var(--timeHover);
+}
+.listHover:nth-child(3) {
+  border-bottom: 1px solid white;
+}
+.listHover:before {
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(148, 187, 233, 1) 0%,
+    rgba(63, 94, 251, 1) var(--percent),
+    rgba(252, 70, 70, 1) 100%
+  );
+  content: "";
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  transition: all var(--timeHover) ease-out;
+  z-index: -1;
+}
+.listHover:hover:before {
+  width: 100%;
+}
+.listHover:hover {
+  color: rgba(63, 94, 251, 1);
+}
+
+.inspiration {
+  color: aliceblue;
+  margin: 20px auto;
+}
+.inspirationSpan {
+  color: rgb(63, 94, 251);
+}

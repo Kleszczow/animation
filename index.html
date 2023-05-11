@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
     <link rel="stylesheet" href="glich.css" />
+    <link rel="stylesheet" href="hover.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    ]
+
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@200;400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -25,7 +26,7 @@
       </ul>
     </nav>
     <main>
-      <section>
+      <section class="hide">
         <div class="container">
           <div class="cookie">
             <img
@@ -44,18 +45,35 @@
           </div>
         </div>
       </section>
-      <section id="pictureContainer">
+      <section id="pictureContainer" class="hide">
         <img
           src="./pictures/1200px-CD_icon_test.svg.png"
           id="imagine"
           alt="CD"
         />
       </section>
-      <section><h1 id="glich" data-value="KLESZCZOW">KLESZCZOW</h1></section>
+      <section class="hide">
+        <h1 id="glich" data-value="KLESZCZOW">KLESZCZOW</h1>
+      </section>
+      <section class="hoverEfect">
+        <ul class="listHover">
+          <p>Heelo</p>
+        </ul>
+        <ul class="listHover">
+          <p>Beatiful</p>
+        </ul>
+        <ul class="listHover">
+          <p>World</p>
+        </ul>
+        <p class="inspiration">
+          inspiration:
+          <span class="inspirationSpan">https://studio9p.com/en/</span>
+        </p>
+      </section>
     </main>
-
     <script src="base.js"></script>
     <script src="cookie.js"></script>
     <script src="hacker.js"></script>
+    <script src="hover.js"></script>
   </body>
 </html>
