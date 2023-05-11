@@ -6,6 +6,7 @@
   place-content: center start;
   place-items: start;
   width: 100%;
+  overflow: hidden;
 }
 .listHover {
   border-top: 1px solid white;
@@ -49,6 +50,8 @@
   color: aliceblue;
   margin: 20px auto;
 }
-.inspirationSpan {
-  color: rgb(63, 94, 251);
+
+a {
+  color: rgba(63, 94, 251, 1);
+  text-decoration: none;
 }
