@@ -1,0 +1,52 @@
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+}
+#card:nth-child(-n + 3) {
+  width: 380px;
+  aspect-ratio: 2 / 3;
+  border: 2px solid white;
+  overflow: hidden;
+  height: 100%;
+}
+#card > img {
+  width: 100%;
+  object-fit: cover;
+}
+#card:hover > img {
+  animation: scaleHover 600ms;
+}
+@keyframes scaleHover {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@media (width <1380px) {
+  #card:nth-child(-n + 3) {
+    width: 280px;
+  }
+}
+@media (width <1000px) {
+  #card:nth-child(-n + 3) {
+    width: 200px;
+  }
+}
+@media (width <770px) {
+  .cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+  #card:nth-child(-n + 3) {
+    width: 180px;
+  }
+}

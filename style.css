@@ -36,6 +36,7 @@ section {
   place-items: center;
   min-height: 100vh;
   place-content: center;
+  overflow: hidden;
 }
 .container {
   max-width: 500px;
